@@ -1,6 +1,7 @@
-# application-template
-Template for an application (RPX, WUHB) created with rust-wiiu
+# Homebrew Application
 
-Things to solve:
-- one make.toml file for all templates (central)
-- ?
+This template helps you get started with writing WiiU Homebrew applications.
+
+## How to use
+
+TODO
