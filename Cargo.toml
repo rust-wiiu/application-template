@@ -4,4 +4,13 @@ version = "0.1.0"
 edition = "2021"
 authors = ["{{authors}}"]
 
+[package.metadata.wuhb]
+name = "My Rust App"
+# short-name = "short-name"
+# icon = "path/to/icon.png"
+# tv-image = "path/to/image.png"
+# drc-image = "path/to/image.png"
+# content = "/path/to/content/dir"
+
 [dependencies]
+wut = { path = "../wut", version = "*" }

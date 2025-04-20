@@ -1,0 +1,22 @@
+extend = [
+    { path = "../wut/Makefile.toml" },
+]
+
+[env]
+WUT_DIR = "../wut"
+
+[tasks.build]
+clear = true
+dependencies = ["wuhb"]
+
+[tasks.run]
+clear = true
+command = "../cemu/Cemu"
+args = ["-g", "${OUT_FILE}"]
+dependencies = ["build"]
+
+# [tasks.upload]
+# env = { IP = "<Ipv4 of Wii U>", TO = "fs/vol/external01/wiiu/apps/test/${CARGO_MAKE_PROJECT_NAME}.wuhb" }
+# command = "curl"
+# args = ["-s", "-m", "5", "-T", "${OUT_FILE}", "ftp://${IP}/${TO}"]
+# dependencies = ["build"]
